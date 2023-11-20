@@ -11,7 +11,7 @@ import {
   Grid,
   Avatar,
 } from "@mui/material";
-import { LightMode, DarkMode } from "@mui/icons-material";
+import { LightMode, DarkMode, Download } from "@mui/icons-material";
 import "./App.css";
 import Card from "./Card";
 
@@ -46,6 +46,17 @@ function App() {
             CMPT 362 - Group 23
           </h1>
           <div style={{ flexGrow: 1 }} />
+
+          <a
+            href="PlantCare.zip"
+            download
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <IconButton color="inherit" style={{ color: "inherit" }}>
+              <Download />
+            </IconButton>
+          </a>
+
           <IconButton color="inherit" onClick={toggleDarkMode}>
             {darkMode ? <LightMode /> : <DarkMode />}
           </IconButton>
