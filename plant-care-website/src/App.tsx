@@ -161,7 +161,7 @@ function App() {
           <Grid item xs={12} md={4}>
             <Card>
               <CardContent>
-                <h3 className="text-in-card">gba37@sfu.ca</h3>
+                <h3 className="text-in-card">gba46@sfu.ca</h3>
               </CardContent>
             </Card>
           </Grid>
