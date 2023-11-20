@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PlantCare/static/css/main.d744b57c.css",
+    "main.js": "/PlantCare/static/js/main.03ffceb2.js",
+    "static/js/787.a5ba3f4f.chunk.js": "/PlantCare/static/js/787.a5ba3f4f.chunk.js",
+    "index.html": "/PlantCare/index.html",
+    "main.d744b57c.css.map": "/PlantCare/static/css/main.d744b57c.css.map",
+    "main.03ffceb2.js.map": "/PlantCare/static/js/main.03ffceb2.js.map",
+    "787.a5ba3f4f.chunk.js.map": "/PlantCare/static/js/787.a5ba3f4f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d744b57c.css",
+    "static/js/main.03ffceb2.js"
+  ]
+}
