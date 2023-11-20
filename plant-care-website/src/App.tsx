@@ -9,7 +9,7 @@ import {
   CssBaseline,
   Container,
   Grid,
-  Avatar
+  Avatar,
 } from "@mui/material";
 import { LightMode, DarkMode } from "@mui/icons-material";
 import "./App.css";
@@ -17,7 +17,8 @@ import Card from "./Card";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
-  const videoUrl = "https://www.youtube.com/embed/SPgVi5D-Sog";
+  const projectPitchUrl = "https://www.youtube.com/embed/SPgVi5D-Sog";
+  const showAndTellOneUrl = "https://www.youtube.com/embed/bNPBW7WVzAg";
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -34,10 +35,14 @@ function App() {
       <CssBaseline />
       <AppBar position="static">
         <Toolbar style={{ backgroundColor: "#11321A" }}>
-        <Avatar style={{ padding: '3px' }}>
-          <img src="app-icon.png" alt="App Icon" style={{ width: '100%', height: '100%' }} />
-        </Avatar>
-          <h1 style={{ paddingLeft: '15px' }} className="text">
+          <Avatar style={{ padding: "3px" }}>
+            <img
+              src="app-icon.png"
+              alt="App Icon"
+              style={{ width: "100%", height: "100%" }}
+            />
+          </Avatar>
+          <h1 style={{ paddingLeft: "15px" }} className="text">
             CMPT 362 - Group 23
           </h1>
           <div style={{ flexGrow: 1 }} />
@@ -58,7 +63,8 @@ function App() {
               Welcome to PlantCare - Our mobile app empowers users to add,
               monitor, and nurture their plants with personalized reminders,
               insightful watering history visualization, and a rich database
-              offering information on diverse plant species. We hope to make caring for plants a delightful journey for everyone!
+              offering information on diverse plant species. We hope to make
+              caring for plants a delightful journey for everyone!
             </h3>
           </CardContent>
         </Card>
@@ -193,17 +199,38 @@ function App() {
       </Container>
 
       <Container style={{ marginTop: "20px" }}>
+        <h2 className="text">Show & Tell 1:</h2>
+      </Container>
+
+      <Container style={{ marginTop: "20px" }}>
+        <Card>
+          <CardContent>
+            {projectPitchUrl && (
+              <iframe
+                width="100%"
+                height="600"
+                src={showAndTellOneUrl}
+                title="YouTube Video"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            )}
+          </CardContent>
+        </Card>
+      </Container>
+
+      <Container style={{ marginTop: "20px" }}>
         <h2 className="text">Project Pitch:</h2>
       </Container>
 
       <Container style={{ marginTop: "20px" }}>
         <Card>
           <CardContent>
-            {videoUrl && (
+            {projectPitchUrl && (
               <iframe
                 width="100%"
                 height="600"
-                src={videoUrl}
+                src={projectPitchUrl}
                 title="YouTube Video"
                 frameBorder="0"
                 allowFullScreen
