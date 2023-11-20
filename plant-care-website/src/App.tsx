@@ -129,7 +129,7 @@ function App() {
           <Grid item xs={12} md={4}>
             <Card>
               <CardContent>
-                <h3 className="text-in-card">-----</h3>
+                <h3 className="text-in-card">301317429</h3>
               </CardContent>
             </Card>
           </Grid>
@@ -137,7 +137,7 @@ function App() {
           <Grid item xs={12} md={4}>
             <Card>
               <CardContent>
-                <h3 className="text-in-card">---@sfu.ca</h3>
+                <h3 className="text-in-card">ssanei@sfu.ca</h3>
               </CardContent>
             </Card>
           </Grid>
