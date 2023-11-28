@@ -11,7 +11,7 @@ import {
   Grid,
   Avatar,
 } from "@mui/material";
-import { LightMode, DarkMode, Download } from "@mui/icons-material";
+import { LightMode, DarkMode, Download, PhoneAndroid } from "@mui/icons-material";
 import "./App.css";
 import Card from "./Card";
 
@@ -19,6 +19,7 @@ function App() {
   const [darkMode, setDarkMode] = useState(true);
   const projectPitchUrl = "https://www.youtube.com/embed/SPgVi5D-Sog";
   const showAndTellOneUrl = "https://www.youtube.com/embed/bNPBW7WVzAg";
+  const showAndTellTwoUrl = "https://www.youtube.com/embed/680jwnZBujg";
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -46,6 +47,16 @@ function App() {
             CMPT 362 - Group 23
           </h1>
           <div style={{ flexGrow: 1 }} />
+
+          <a
+            href="PlantCare.apk"
+            download
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <IconButton color="inherit" style={{ color: "inherit" }}>
+              <PhoneAndroid />
+            </IconButton>
+          </a>
 
           <a
             href="PlantCare.zip"
@@ -210,13 +221,34 @@ function App() {
       </Container>
 
       <Container style={{ marginTop: "20px" }}>
+        <h2 className="text">Show & Tell 2:</h2>
+      </Container>
+
+      <Container style={{ marginTop: "20px" }}>
+        <Card>
+          <CardContent>
+            {showAndTellTwoUrl && (
+              <iframe
+                width="100%"
+                height="600"
+                src={showAndTellTwoUrl}
+                title="YouTube Video"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            )}
+          </CardContent>
+        </Card>
+      </Container>
+
+      <Container style={{ marginTop: "20px" }}>
         <h2 className="text">Show & Tell 1:</h2>
       </Container>
 
       <Container style={{ marginTop: "20px" }}>
         <Card>
           <CardContent>
-            {projectPitchUrl && (
+            {showAndTellOneUrl && (
               <iframe
                 width="100%"
                 height="600"
