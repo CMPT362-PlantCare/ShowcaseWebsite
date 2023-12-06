@@ -11,7 +11,12 @@ import {
   Grid,
   Avatar,
 } from "@mui/material";
-import { LightMode, DarkMode, Download, PhoneAndroid } from "@mui/icons-material";
+import {
+  LightMode,
+  DarkMode,
+  Download,
+  PhoneAndroid,
+} from "@mui/icons-material";
 import "./App.css";
 import Card from "./Card";
 
@@ -75,25 +80,77 @@ function App() {
       </AppBar>
 
       <Container style={{ marginTop: "20px" }}>
-        <h2 className="text">Project Statement:</h2>
+        <h2 className="text">PlantCare</h2>
       </Container>
 
+      {/* PlantCare Overview */}
       <Container style={{ marginTop: "20px" }}>
         <Card>
           <CardContent>
             <h3 className="text-in-card">
-              Welcome to PlantCare - Our mobile app empowers users to add,
-              monitor, and nurture their plants with personalized reminders,
-              insightful watering history visualization, and a rich database
-              offering information on diverse plant species. We hope to make
-              caring for plants a delightful journey for everyone!
+              🌿 Welcome to PlantCare! Where Your Plants Thrive with Ease. At
+              PlantCare, we're here to make plant care simple, enjoyable, and
+              personalized. Our app helps you add, monitor, and nurture your
+              plants effortlessly. From personalized reminders to a rich plant
+              database, we've got you covered.
+            </h3>
+          </CardContent>
+        </Card>
+      </Container>
+
+      {/* Mission */}
+      <Container style={{ marginTop: "20px" }}>
+        <h2 className="text">🌱 Mission:</h2>
+      </Container>
+      <Container style={{ marginTop: "20px" }}>
+        <Card>
+          <CardContent>
+            <h3 className="text-in-card">
+              We're on a mission to bring joy to plant care. With user-friendly
+              technology, we want to make it easy for everyone to connect with
+              their plants, turning it into a delightful experience.
+            </h3>
+          </CardContent>
+        </Card>
+      </Container>
+
+      {/* What Sets Us Apart */}
+      <Container style={{ marginTop: "20px" }}>
+        <h2 className="text">✨ What Sets Us Apart:</h2>
+      </Container>
+      <Container style={{ marginTop: "20px" }}>
+        <Card>
+          <CardContent>
+            <h3 className="text-in-card">
+              Personalized Plant Care: Add your plants and receive tailored
+              reminders based on their unique needs. Explore our Plant Database:
+              Get insights into diverse plant species, whether you're a newbie
+              or a seasoned plant parent. Intuitive Calendar: Stay organized
+              with our calendar, keeping track of watering tasks.
+            </h3>
+          </CardContent>
+        </Card>
+      </Container>
+
+      {/* Why PlantCare */}
+      <Container style={{ marginTop: "20px" }}>
+        <h2 className="text">🌍 Why PlantCare:</h2>
+      </Container>
+      <Container style={{ marginTop: "20px" }}>
+        <Card>
+          <CardContent>
+            <h3 className="text-in-card">
+              As living costs rise, more millennials are turning to plants for a
+              fulfilling connection with nature. PlantCare welcomes you to a
+              community where plant care is affordable, simple, and delightful.
+              Join PlantCare today and let's cultivate happiness together! 🌿✨
             </h3>
           </CardContent>
         </Card>
       </Container>
 
       <Container style={{ marginTop: "20px" }}>
-        <h2 className="text">Team Members:</h2>
+        <h2 className="text">Team Members 🤝:</h2>
       </Container>
 
       <Container style={{ marginTop: "20px" }}>
