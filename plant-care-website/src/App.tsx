@@ -25,6 +25,7 @@ function App() {
   const projectPitchUrl = "https://www.youtube.com/embed/SPgVi5D-Sog";
   const showAndTellOneUrl = "https://www.youtube.com/embed/bNPBW7WVzAg";
   const showAndTellTwoUrl = "https://www.youtube.com/embed/680jwnZBujg";
+  const finalDemoUrl = "https://www.youtube.com/embed/hkxtRC4eYqM";
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -145,6 +146,27 @@ function App() {
               community where plant care is affordable, simple, and delightful.
               Join PlantCare today and let's cultivate happiness together! 🌿✨
             </h3>
+          </CardContent>
+        </Card>
+      </Container>
+
+      <Container style={{ marginTop: "20px" }}>
+        <h2 className="text">Final Demo:</h2>
+      </Container>
+
+      <Container style={{ marginTop: "20px" }}>
+        <Card>
+          <CardContent>
+            {finalDemoUrl && (
+              <iframe
+                width="100%"
+                height="600"
+                src={finalDemoUrl}
+                title="YouTube Video"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            )}
           </CardContent>
         </Card>
       </Container>
@@ -395,12 +417,12 @@ function App() {
           <CardContent>
             <h3 className="text-in-card">
               Created the dashboard page Created the bottom navigation bar for
-              the main activities of the app Secured API Key by storing them in
+              the main activities of the app. Secured API Key by storing them in
               local properties and accessing it through BuildConfig. Implemented
               the AlarmManager to schedule daily reminders for plant watering.
               Utilized a BroadcastReceiver to handle these alarms and trigger
               the display notification for plants that require watering. Helped
-              to create the thread diagram.
+              to create the thread diagram. Edited all project demos.
             </h3>
           </CardContent>
         </Card>
