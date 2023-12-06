@@ -242,7 +242,7 @@ function App() {
         <Card>
           <CardContent>
             <img
-              src="thread-diag.png"
+              src={process.env.PUBLIC_URL + '/thread-diagram.png'}
               alt="Thread Diagram"
               style={{ width: "100%", height: "100%" }}
             />
