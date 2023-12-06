@@ -242,9 +242,9 @@ function App() {
         <Card>
           <CardContent>
             <img
-              src="thread_diagram.jpg"
+              src="thread-diag.png"
               alt="Thread Diagram"
-              style={{ width: "100%", height: "auto" }}
+              style={{ width: "100%", height: "100%" }}
             />
           </CardContent>
         </Card>
