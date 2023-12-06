@@ -235,6 +235,22 @@ function App() {
       </Container>
 
       <Container style={{ marginTop: "20px" }}>
+        <h2 className="text">Thread Diagram:</h2>
+      </Container>
+
+      <Container style={{ marginTop: "20px" }}>
+        <Card>
+          <CardContent>
+            <img
+              src="thread_diagram.jpg"
+              alt="Thread Diagram"
+              style={{ width: "100%", height: "auto" }}
+            />
+          </CardContent>
+        </Card>
+      </Container>
+
+      <Container style={{ marginTop: "20px" }}>
         <h2 className="text">Team Members 🤝:</h2>
       </Container>
 
