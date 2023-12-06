@@ -150,6 +150,69 @@ function App() {
       </Container>
 
       <Container style={{ marginTop: "20px" }}>
+        <h2 className="text">Show & Tell 2:</h2>
+      </Container>
+
+      <Container style={{ marginTop: "20px" }}>
+        <Card>
+          <CardContent>
+            {showAndTellTwoUrl && (
+              <iframe
+                width="100%"
+                height="600"
+                src={showAndTellTwoUrl}
+                title="YouTube Video"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            )}
+          </CardContent>
+        </Card>
+      </Container>
+
+      <Container style={{ marginTop: "20px" }}>
+        <h2 className="text">Show & Tell 1:</h2>
+      </Container>
+
+      <Container style={{ marginTop: "20px" }}>
+        <Card>
+          <CardContent>
+            {showAndTellOneUrl && (
+              <iframe
+                width="100%"
+                height="600"
+                src={showAndTellOneUrl}
+                title="YouTube Video"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            )}
+          </CardContent>
+        </Card>
+      </Container>
+
+      <Container style={{ marginTop: "20px" }}>
+        <h2 className="text">Project Pitch:</h2>
+      </Container>
+
+      <Container style={{ marginTop: "20px" }}>
+        <Card>
+          <CardContent>
+            {projectPitchUrl && (
+              <iframe
+                width="100%"
+                height="600"
+                src={projectPitchUrl}
+                title="YouTube Video"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            )}
+          </CardContent>
+        </Card>
+      </Container>
+
+      <Container style={{ marginTop: "20px" }}>
         <h2 className="text">Team Members 🤝:</h2>
       </Container>
 
@@ -277,65 +340,100 @@ function App() {
         </Grid>
       </Container>
 
+      {/* Contributions */}
       <Container style={{ marginTop: "20px" }}>
-        <h2 className="text">Show & Tell 2:</h2>
+        <h2 className="text">Contributions 🌟:</h2>
       </Container>
-
+      <Container style={{ marginTop: "20px" }}>
+        <h3 className="text">Divya:</h3>
+      </Container>
       <Container style={{ marginTop: "20px" }}>
         <Card>
           <CardContent>
-            {showAndTellTwoUrl && (
-              <iframe
-                width="100%"
-                height="600"
-                src={showAndTellTwoUrl}
-                title="YouTube Video"
-                frameBorder="0"
-                allowFullScreen
-              ></iframe>
-            )}
+            <h3 className="text-in-card">
+              Created the "Login" and "Signup" pages, implementing login/signup
+              functionality with Firebase Authentication. Initially established
+              a Room Database, which was later discarded due to unreliable
+              storage. Subsequently, persisted user data by configuring Firebase
+              Realtime Database. Designed a JSON schema for storing user and
+              plant information on Firebase Realtime Database. Implemented logic
+              for saving, updating, and deleting plants within the "Add Plant"
+              and "Edit Plant" pages. Enhanced data integrity by ensuring
+              robustness in handling input during screen orientation changes.
+              Configured Firebase Storage to store plant images in the cloud.
+              Optimized storage on the file system by implementing logic to
+              create local copies of images and managing cleanup for deleted and
+              cancelled copies. Created the project website.
+            </h3>
           </CardContent>
         </Card>
       </Container>
 
       <Container style={{ marginTop: "20px" }}>
-        <h2 className="text">Show & Tell 1:</h2>
+        <h3 className="text">Sara:</h3>
       </Container>
-
       <Container style={{ marginTop: "20px" }}>
         <Card>
           <CardContent>
-            {showAndTellOneUrl && (
-              <iframe
-                width="100%"
-                height="600"
-                src={showAndTellOneUrl}
-                title="YouTube Video"
-                frameBorder="0"
-                allowFullScreen
-              ></iframe>
-            )}
+            <h3 className="text-in-card">
+              Created the “Add plant” page. Set up the API calls to get plant
+              species via the autocomplete text field in the “Add plant” page,
+              and get care guides, suggested watering frequency, and default
+              plant picture by plant species ID. Created the “Plant info” page
+              and populate it with information from the API. Helped to create
+              the thread diagram.
+            </h3>
           </CardContent>
         </Card>
       </Container>
 
       <Container style={{ marginTop: "20px" }}>
-        <h2 className="text">Project Pitch:</h2>
+        <h3 className="text">Shiva:</h3>
       </Container>
-
       <Container style={{ marginTop: "20px" }}>
         <Card>
           <CardContent>
-            {projectPitchUrl && (
-              <iframe
-                width="100%"
-                height="600"
-                src={projectPitchUrl}
-                title="YouTube Video"
-                frameBorder="0"
-                allowFullScreen
-              ></iframe>
-            )}
+            <h3 className="text-in-card">
+              Created the dashboard page Created the bottom navigation bar for
+              the main activities of the app Secured API Key by storing them in
+              local properties and accessing it through BuildConfig. Implemented
+              the AlarmManager to schedule daily reminders for plant watering.
+              Utilized a BroadcastReceiver to handle these alarms and trigger
+              the display notification for plants that require watering. Helped
+              to create the thread diagram.
+            </h3>
+          </CardContent>
+        </Card>
+      </Container>
+
+      <Container style={{ marginTop: "20px" }}>
+        <h3 className="text">Gourav:</h3>
+      </Container>
+      <Container style={{ marginTop: "20px" }}>
+        <Card>
+          <CardContent>
+            <h3 className="text-in-card">
+              Created the MVVM diagram to help structure different components
+              and make the code modular, ensuring scalability and
+              maintainability. Implemented Schedule Activity to display watering
+              events with the functionality to mark them as done. Modified
+              firebase database to store watering events and firebase key for
+              each plant adopted by user Helped to create the thread diagram.
+            </h3>
+          </CardContent>
+        </Card>
+      </Container>
+
+      <Container style={{ marginTop: "20px" }}>
+        <h3 className="text">Ekamdeep:</h3>
+      </Container>
+      <Container style={{ marginTop: "20px" }}>
+        <Card>
+          <CardContent>
+            <h3 className="text-in-card">
+              Created the UI and functionality of Splash screen with our app’s
+              logo which is shown while the app starts.
+            </h3>
           </CardContent>
         </Card>
       </Container>
